@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sistema de Gerenciamento de Produtos e Pedidos - Microsserviços e APIs
 
 Este projeto implementa um sistema de gerenciamento de produtos e pedidos, seguindo as boas práticas de microsserviços, com API Gateway, Service Registry e comunicação entre serviços utilizando **OpenFeign**. O sistema permite realizar operações CRUD em produtos e pedidos, validando a disponibilidade dos produtos antes da criação de novos pedidos.
@@ -70,3 +71,6 @@ O projeto está dividido nos seguintes pacotes e camadas para cada microsserviç
    
    ```bash
    ./mvnw clean install
+=======
+# projeto-microservico-produtos-pedidos
+>>>>>>> 80c50c8da51772e115a405c51defa4a9935d019d
