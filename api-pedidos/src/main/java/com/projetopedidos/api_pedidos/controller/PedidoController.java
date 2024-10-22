@@ -15,7 +15,7 @@ import java.util.Map;
 
 @AllArgsConstructor
 @RestController
-@RequestMapping(name = "/pedidos",
+@RequestMapping(path = "/pedidos",
         consumes = MediaType.APPLICATION_JSON_VALUE,
         produces = MediaType.APPLICATION_JSON_VALUE)
 public class PedidoController {
