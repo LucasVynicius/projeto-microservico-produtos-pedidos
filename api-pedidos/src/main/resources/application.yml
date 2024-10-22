@@ -4,7 +4,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/pedidos-db?createDatabaseIfNotExist=true
-    password:
+    password: Vyni1995
     username: root
   jpa:
     hibernate:

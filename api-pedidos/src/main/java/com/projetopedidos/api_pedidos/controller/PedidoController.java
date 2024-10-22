@@ -2,13 +2,13 @@ package com.projetopedidos.api_pedidos.controller;
 
 import com.projetopedidos.api_pedidos.dto.PedidoDto;
 import com.projetopedidos.api_pedidos.service.PedidoService;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -38,12 +38,12 @@ public class PedidoController {
     }
 
     @PostMapping
-    public ResponseEntity<PedidoDto> save(@RequestBody PedidoDto pedidoDto){
+    public ResponseEntity<PedidoDto> save(@RequestBody @Valid PedidoDto pedidoDto){
         return ResponseEntity.status(201).body(pedidoService.save(pedidoDto));
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<PedidoDto> update(@PathVariable Long id, @RequestBody @Validated PedidoDto pedidoDto){
+    public ResponseEntity<PedidoDto> update(@PathVariable Long id, @RequestBody @Valid PedidoDto pedidoDto){
         return ResponseEntity.ok(pedidoService.save(pedidoDto));
     }
 

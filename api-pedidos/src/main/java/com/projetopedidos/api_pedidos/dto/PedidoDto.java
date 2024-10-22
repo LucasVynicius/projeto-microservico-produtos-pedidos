@@ -2,6 +2,7 @@ package com.projetopedidos.api_pedidos.dto;
 
 import com.projetopedidos.api_pedidos.enums.PedidoStatus;
 import com.projetopedidos.api_pedidos.model.Pedido;
+import jakarta.validation.constraints.NotBlank;
 import org.springframework.data.domain.Page;
 
 import java.time.LocalDate;
@@ -10,9 +11,9 @@ public record PedidoDto(
 
         Long id,
         LocalDate dataPedido,
-        String endereco,
+        @NotBlank String endereco,
 
-        PedidoStatus pedidoStatus,
+        @NotBlank PedidoStatus pedidoStatus,
         Long idProduto
 ) {
 
