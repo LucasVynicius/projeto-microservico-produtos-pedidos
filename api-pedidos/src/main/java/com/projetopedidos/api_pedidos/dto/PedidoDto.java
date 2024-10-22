@@ -13,7 +13,7 @@ public record PedidoDto(
         LocalDate dataPedido,
         @NotBlank String endereco,
 
-        @NotBlank PedidoStatus pedidoStatus,
+        PedidoStatus pedidoStatus,
         Long idProduto
 ) {
 
